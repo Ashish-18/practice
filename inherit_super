@@ -1,0 +1,14 @@
+class Animal(object):
+    def __init__(self, animal_type):
+        print('Animal_Type', animal_type)
+
+
+class Mammal(Animal):
+    def __init__(self):
+        print('Mammals give birth directly')
+        super().__init__('Mammal')
+
+
+
+dog = Mammal()
+

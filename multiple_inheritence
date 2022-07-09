@@ -1,0 +1,18 @@
+class Animal(object):
+    def __init__(self, animal_type):
+        print('Animal type is', animal_type)
+
+
+class Mammal(Animal):
+    def __init__(self, mammals):
+        print(mammals, 'is a warm blooded animal')
+        super().__init__(mammals)
+
+
+class Nowingedmammal(Mammal):
+    def __init__(self):
+        print('Animal detail')
+        super().__init__('Dog')
+
+
+d1 = Nowingedmammal()

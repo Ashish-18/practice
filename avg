@@ -1,0 +1,16 @@
+import numpy as np
+
+a = np.array([1, 2, 3, 4, 5])
+print(a[1], a[3])
+b = np.array([11, 12, 13, 14, 15])
+for i in b:
+    print("Array b", i)
+c = np.concatenate((a, b))
+for j in c:
+   print("Array C", j)
+print(c)
+
+
+
+"""username = input("Enter username:")
+print("Username is: " + username)"""
